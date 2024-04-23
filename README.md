@@ -1,5 +1,3 @@
-﻿# EventHouse
-
 # Event House Mikroservis Projesi
 
 Bu proje, etkinlik yönetimi için bir mikroservis mimarisi kullanarak geliştirilen bir web platformudur. Event House, etkinlik oluşturma, katılımcıları yönetme, bilet satışı yapma ve etkinlik performansını izleme gibi işlevleri sağlar. Bu README dosyası, projenin kurulumu, kullanılan teknolojiler ve yapılacak işler hakkında bilgi içerir.
