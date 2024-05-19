@@ -1,2 +1,8 @@
 api/eventManagement/node_modules
+api/eventManagement/.env
 api/userManagement/node_modules
+api/userManagement/.env
+api/rbac/node_modules
+api/rbac/.env
+api/auth/node_modules
+api/auth/.env

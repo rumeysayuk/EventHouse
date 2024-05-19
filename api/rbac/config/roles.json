@@ -1,0 +1,35 @@
+{
+  "roles": [
+    {
+      "name": "superadmin",
+      "permissions": [
+        "create_record",
+        "read_record",
+        "update_record",
+        "delete_record"
+      ]
+    },
+    {
+      "name": "admin",
+      "permissions": [
+        "create_record",
+        "read_record",
+        "update_record",
+        "delete_record"
+      ]
+    },
+    {
+      "name": "organizer",
+      "permissions": [
+        "create_record",
+        "read_record",
+        "update_record",
+        "delete_record"
+      ]
+    },
+    {
+      "name": "participant",
+      "permissions": ["read_record"]
+    }
+  ]
+}
