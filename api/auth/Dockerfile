@@ -1,5 +1,5 @@
 # Temel bir Node.js imajı kullanın
-FROM node:14
+FROM node:20
 
 # Çalışma dizinini ayarla
 WORKDIR /app
@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Uygulamanın çalışacağı portu belirt
-EXPOSE 3000
+EXPOSE 5000
 
 # Uygulamayı başlat
 CMD ["npm", "start"]

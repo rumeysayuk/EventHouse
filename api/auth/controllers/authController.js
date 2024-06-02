@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 const { sendJwtToClient } = require("../helpers/authorization/tokenHelpers");
 const asyncErrorWrapper = require("express-async-handler");
 const CustomError = require("../helpers/error/CustomError");
-// const { EMAIL_UNIQUE_ERROR } = require("../constants/messages/messages");
+const { EMAIL_UNIQUE_ERROR } = require("../constants/messages");
 const {
   isTokenIncluded,
   getAccessTokenFromHeader,
@@ -44,6 +44,7 @@ const login = asyncErrorWrapper(async (req, res, next) => {
 });
 
 const register = asyncErrorWrapper(async (req, res, next) => {
+  console.log("burdaaa");
   let oldUser = await User.findOne({ email: req.body.email });
   if (oldUser) return next(new CustomError("EMAIL_UNIQUE_ERROR", 400));
   const user = await User.create({ ...req.body });

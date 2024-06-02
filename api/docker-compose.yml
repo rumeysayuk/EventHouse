@@ -9,3 +9,15 @@ services:
     environment:
       NODE_ENV: development
       PORT: 5000
+      MONGO_URI: mongodb://mongo:27017/eventhouse
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:6.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
