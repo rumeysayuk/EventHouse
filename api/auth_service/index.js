@@ -1,29 +1,31 @@
-// src/index.js
+require("express-async-handler");
 const express = require("express");
-const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const router = require("./src/routes");
+const ErrorHandlerMiddleware = require("./src/middleware/ErrorHandler");
 require("dotenv").config();
-const authRoutes = require("./src/routes/authRoutes");
+require("./src/connection/connMongo");
 
 const app = express();
 const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json({ limit: 50 }));
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+    limit: "50mb",
+    parameterLimit: 50000,
+  })
+);
 
 // Routes
-app.use("/auth", authRoutes);
+app.use("/api", router);
 
-// Database connection
-mongoose
-  .connect(process.env.MONGODB_URI)
-  .then(() => {
-    console.log("Connected to MongoDB");
-    app.listen(port, () => {
-      console.log(`Server is running on port ${port}`);
-    });
-  })
-  .catch((err) => {
-    console.error("Failed to connect to MongoDB", err);
-  });
+// Error Handler Middleware
+app.use(ErrorHandlerMiddleware);
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
