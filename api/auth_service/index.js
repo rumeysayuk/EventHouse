@@ -5,7 +5,9 @@ const router = require("./src/routes");
 const ErrorHandlerMiddleware = require("./src/middleware/ErrorHandler");
 require("dotenv").config();
 require("./src/connection/connMongo");
-
+const cors = require("cors");
+const corsOptions = require("./src/helpers/corsOptions");
+const mongoSanitize = require("express-mongo-sanitize");
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -20,6 +22,9 @@ app.use(
   })
 );
 
+app.use(cors(corsOptions));
+// this is protect our procect for mongo injection
+app.use(mongoSanitize({ replaceWith: "_" }));
 // Routes
 app.use("/api", router);
 
