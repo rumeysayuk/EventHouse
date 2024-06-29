@@ -9,6 +9,7 @@ const cors = require("cors");
 const corsOptions = require("./src/helpers/corsOptions");
 const mongoSanitize = require("express-mongo-sanitize");
 const path = require("path");
+const limitter = require("./src/middleware/rateLimit");
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -30,6 +31,7 @@ app.use(cors(corsOptions));
 // this is protect our api for mongo injection
 app.use(mongoSanitize({ replaceWith: "_" }));
 // Routes
+app.use("/api", limitter); // Rate limiter middleware
 app.use("/api", router);
 
 // Error Handler Middleware
