@@ -8,6 +8,7 @@ require("./src/connection/connMongo");
 const cors = require("cors");
 const corsOptions = require("./src/helpers/corsOptions");
 const mongoSanitize = require("express-mongo-sanitize");
+const path = require("path");
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -22,8 +23,11 @@ app.use(
   })
 );
 
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/uploads", express.static(__dirname));
+
 app.use(cors(corsOptions));
-// this is protect our procect for mongo injection
+// this is protect our api for mongo injection
 app.use(mongoSanitize({ replaceWith: "_" }));
 // Routes
 app.use("/api", router);
