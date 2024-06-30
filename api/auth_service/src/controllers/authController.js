@@ -44,8 +44,28 @@ const me = async (req, res) => {
   response.success(res);
 };
 
+const forgetPassword = async (req, res) => {
+  try {
+    const resultForgetPass = await authService.forgetPassword(req.body);
+    console.log(resultForgetPass);
+    resultForgetPass.success(res, "Password is changed successful");
+  } catch (error) {
+    console.log("error", error);
+    // Handle errors with proper response method
+    if (error instanceof ErrorResponse) {
+      return new Response(null, error.message).unauthorizedError(res);
+    } else {
+      return new Response(
+        null,
+        "An unexpected error occurred"
+      ).internalServerError(res);
+    }
+  }
+};
+
 module.exports = {
   login,
   register,
   me,
+  forgetPassword,
 };
