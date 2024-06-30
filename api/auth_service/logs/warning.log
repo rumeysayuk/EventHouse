@@ -1,0 +1,26 @@
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'fc8f8774-78de-4b1e-affe-764b91e7ee65',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 401 },
+    responseTime: 50
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/register'
+}

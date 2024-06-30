@@ -1,0 +1,78 @@
+{
+  meta: {
+    req: {
+      url: '/api/auth/login',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '5c490fd3-3724-4fd6-aa8e-02681fe2e7dc',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '71'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 116
+  },
+  level: 'info',
+  message: 'HTTP POST /api/auth/login'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'fc8f8774-78de-4b1e-affe-764b91e7ee65',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 401 },
+    responseTime: 50
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/register'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/login',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '5d4ca5d8-e035-42ad-919b-041371cab888',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '71'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 69
+  },
+  level: 'info',
+  message: 'HTTP POST /api/auth/login'
+}

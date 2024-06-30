@@ -1,8 +1,6 @@
 const { transports, format, createLogger } = require("winston");
 require("winston-mongodb");
-const logFormat = format.printf(({ level, message, timestamp, meta }) => {
-  return `${timestamp} ${level}: ${meta.message || message}`;
-});
+
 const logger = createLogger({
   transports: [
     new transports.Console(),
@@ -15,7 +13,12 @@ const logger = createLogger({
       storeHost: true,
       options: { useUnifiedTopology: true },
       collection: "authLogs",
-      format: format.combine(format.timestamp(), logFormat),
+      format: format.combine(
+        format.timestamp(),
+        format.printf(({ timestamp, level, message }) => {
+          return `${timestamp} [${level}] : ${message}`;
+        })
+      ),
     }),
   ],
 
