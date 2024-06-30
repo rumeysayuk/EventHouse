@@ -3,7 +3,11 @@ const User = require("../models/User");
 const { hashPassword, comparePassword } = require("../utils/hashPassword");
 const ErrorResponse = require("../utils/error");
 const Response = require("../utils/response");
-const { createToken } = require("../middleware/authMiddleware");
+const {
+  createToken,
+  createTemporaryToken,
+  decodedTemporaryToken,
+} = require("../middleware/authMiddleware");
 const sendEmail = require("../middleware/libraries/sendMail");
 const moment = require("moment");
 
@@ -36,7 +40,7 @@ const register = async (userData) => {
 
   await user.save();
 
-  return new Response(user);
+  return new Response(user, "Register is Successfully");
 };
 
 const login = async (loginData) => {
@@ -100,4 +104,47 @@ const forgetPassword = async (userInfo) => {
   );
 };
 
-module.exports = { login, register, me, forgetPassword };
+const resetPasswordCheck = async (resetPassInfos) => {
+  const { email, code, password } = resetPassInfos;
+  const checkUserInfo = await User.findOne({ email }).select(
+    "_id email resetPassword userName"
+  );
+  if (!checkUserInfo)
+    throw new ErrorResponse("This user not found in our system", 404);
+
+  const currentUserResetPassTime = moment(checkUserInfo.resetPassword.time);
+  const currentTime = moment(new Date());
+
+  const timeDiff = currentUserResetPassTime.diff(currentTime, "minutes");
+  if (timeDiff <= 0 && checkUserInfo.resetPassword.code === code)
+    throw new ErrorResponse("The code is invalid. Please try again !");
+
+  const temporaryToken = await createTemporaryToken(checkUserInfo);
+  return new Response(
+    { temporaryToken, password },
+    "Reset token created successfully"
+  );
+};
+
+const resetPassword = async (resetPassInfos) => {
+  const { temporaryToken, password } = resetPassInfos;
+  const decodedToken = await decodedTemporaryToken(temporaryToken);
+
+  const hashedPassword = await hashPassword(password);
+
+  await User.findByIdAndUpdate(
+    {
+      _id: decodedToken._id,
+    },
+    { password: hashedPassword, resetPassword: { time: null, code: null } }
+  );
+  return new Response({ decodedToken }, "Reset token is successful");
+};
+module.exports = {
+  login,
+  register,
+  me,
+  forgetPassword,
+  resetPassword,
+  resetPasswordCheck,
+};

@@ -10,4 +10,8 @@ router.post("/login", AuthValidation.login, authController.login);
 router.get("/me", checkToken, authController.me);
 
 router.post("/forget-password", authController.forgetPassword);
+
+// router.post("/reset-password-check", authController.resetPasswordCheck);
+
+router.post("/reset-password", authController.resetPasswordCheck);
 module.exports = router;

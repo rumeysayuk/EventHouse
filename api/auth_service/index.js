@@ -10,6 +10,7 @@ const corsOptions = require("./src/helpers/corsOptions");
 const mongoSanitize = require("express-mongo-sanitize");
 const path = require("path");
 const limitter = require("./src/middleware/rateLimit");
+require("moment-timezone").tz.setDefault("Europe/Istanbul");
 const app = express();
 const port = process.env.PORT || 5000;
 

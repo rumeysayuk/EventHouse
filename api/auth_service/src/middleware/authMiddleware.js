@@ -54,4 +54,42 @@ const checkToken = async (req, res, next) => {
   }
 };
 
-module.exports = { createToken, checkToken, verifyToken };
+const createTemporaryToken = async (user) => {
+  const payload = {
+    sub: user._id,
+    name: user.email,
+  };
+  const token = await jwt.sign(payload, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_TEMPORARY_EXPIRES_IN,
+    algorithm: "HS256",
+  });
+  return token;
+};
+
+const decodedTemporaryToken = async (token) => {
+  try {
+    const decoded = await jwt.verify(token, process.env.JWT_SECRET, {
+      algorithms: ["HS256"],
+    });
+    const user = await User.findById(decoded.sub).select(
+      "_id userName firstName lastName email"
+    );
+    if (!user)
+      throw new ErrorResponse("This user not found in our system", 400);
+
+    if (!user || user.email !== decoded.name) {
+      throw new ErrorResponse("Token is invalid", 401);
+    }
+    return user;
+  } catch (err) {
+    throw new ErrorResponse("Token is invalid", 401);
+  }
+};
+
+module.exports = {
+  createToken,
+  checkToken,
+  verifyToken,
+  createTemporaryToken,
+  decodedTemporaryToken,
+};

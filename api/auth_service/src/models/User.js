@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema(
     roles: [{ type: mongoose.Schema.Types.ObjectId, ref: "Role" }],
     resetPassword: {
       code: { type: String, default: null },
-      time: { type: Date, default: null },
+      time: { type: String, default: null },
     },
   },
   { collection: "users", timestamps: true, versionKey: false }
