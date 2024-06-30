@@ -10,9 +10,13 @@ const corsOptions = require("./src/helpers/corsOptions");
 const mongoSanitize = require("express-mongo-sanitize");
 const path = require("path");
 const limitter = require("./src/middleware/rateLimit");
+const expressWinston = require("express-winston");
+const logger = require("./src/utils/logger");
+
 require("moment-timezone").tz.setDefault("Europe/Istanbul");
 const app = express();
 const port = process.env.PORT || 5000;
+app.use(expressWinston.logger({ winstonInstance: logger, statusLevels: true })); //logging operations
 
 // Middleware
 app.use(bodyParser.json());

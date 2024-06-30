@@ -10,6 +10,7 @@ const {
 } = require("../middleware/authMiddleware");
 const sendEmail = require("../middleware/libraries/sendMail");
 const moment = require("moment");
+// const logger = require("../utils/logger");
 
 const register = async (userData) => {
   const { userName, firstName, lastName, email, password, country, city, age } =
@@ -53,6 +54,8 @@ const login = async (loginData) => {
   }
 
   const token = await createToken(checkUserInfo);
+  // logger.log("info", "bu bir log");
+
   return new Response(token, "Login is successfully");
 };
 

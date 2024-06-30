@@ -1,0 +1,10 @@
+GET http://localhost:5000/api/auth/me
+
+
+POST http://localhost:5000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "rumeysayuk90@gmail.com",
+    "password": "Pass1234."
+}
