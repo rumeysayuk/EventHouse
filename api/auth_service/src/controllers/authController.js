@@ -108,6 +108,23 @@ const resetPassword = async (req, res) => {
     }
   }
 };
+
+const verifyAccount = async (req, res) => {
+  try {
+    const resultForgetPass = await authService.verifyAccount(req.query.token);
+    resultForgetPass.success(res, "Verfiy Account is successful");
+  } catch (error) {
+    // Handle errors with proper response method
+    if (error instanceof ErrorResponse) {
+      return new Response(null, error.message).unauthorizedError(res);
+    } else {
+      return new Response(
+        null,
+        "An unexpected error occurred"
+      ).internalServerError(res);
+    }
+  }
+};
 module.exports = {
   login,
   register,
@@ -115,4 +132,5 @@ module.exports = {
   forgetPassword,
   resetPasswordCheck,
   resetPassword,
+  verifyAccount,
 };

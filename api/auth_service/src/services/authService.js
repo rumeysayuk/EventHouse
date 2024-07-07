@@ -7,6 +7,7 @@ const {
   createToken,
   createTemporaryToken,
   decodedTemporaryToken,
+  verifyToken,
 } = require("../middleware/authMiddleware");
 const sendEmail = require("../middleware/libraries/sendMail");
 const moment = require("moment");
@@ -15,11 +16,11 @@ const moment = require("moment");
 const register = async (userData) => {
   const { userName, firstName, lastName, email, password, country, city, age } =
     userData;
-  const isExist = await User.findOne({
+  const isExistUser = await User.findOne({
     $or: [{ email: email }, { userName: userName }],
   });
 
-  if (isExist) {
+  if (isExistUser) {
     throw new ErrorResponse(
       "This user is already registered in our system.",
       401
@@ -37,11 +38,33 @@ const register = async (userData) => {
     city,
     age,
     password: hashedPassword,
+    isVerified: false,
   });
 
   await user.save();
+  const savedUser = await User.findOne({
+    $or: [{ email: email }, { userName: userName }],
+  });
 
-  return new Response(user, "Register is Successfully");
+  const token = await createToken(savedUser); // Call the method on the instance
+  const verifyAccountUrl = `${process.env.WEB_URL}/auth/verify-account?token=${token}`;
+
+  const emailTemplate = `
+      <h3>Verfiy Account</h3>
+      <p>This <a href='${verifyAccountUrl}' target='_blank'>Link is your account verifiy  link </a></p>
+      `;
+  await sendEmail({
+    from: process.env.SMTP_HOST,
+    to: email,
+    subject: "Verfy Account",
+    text: "Email content",
+    html: emailTemplate,
+  });
+
+  return new Response(
+    user,
+    "Register is Successfully. Please check email address"
+  );
 };
 
 const login = async (loginData) => {
@@ -49,6 +72,12 @@ const login = async (loginData) => {
   const checkUserInfo = await User.findOne({ email });
   if (!checkUserInfo)
     throw new ErrorResponse("This user not found in our system", 404);
+  if (!checkUserInfo.isVerified) {
+    throw new ErrorResponse(
+      "Your account is not verified. Please verify your email address.is ",
+      401
+    );
+  }
   if (!(await comparePassword(password, checkUserInfo.password))) {
     throw new ErrorResponse("Invalid email or password", 401);
   }
@@ -143,6 +172,20 @@ const resetPassword = async (resetPassInfos) => {
   );
   return new Response({ decodedToken }, "Reset token is successful");
 };
+
+const verifyAccount = async (token) => {
+  if (!token) throw new ErrorResponse("Token is invalhhhid!");
+  const decodedToken = await verifyToken(token);
+  const user = await User.findById(decodedToken._id);
+
+  if (!user) throw new ErrorResponse("User not found!");
+
+  user.isVerified = true;
+  await user.save();
+
+  return new Response(null, "Account is verified successful");
+};
+
 module.exports = {
   login,
   register,
@@ -150,4 +193,5 @@ module.exports = {
   forgetPassword,
   resetPassword,
   resetPasswordCheck,
+  verifyAccount,
 };

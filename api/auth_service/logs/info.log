@@ -76,3 +76,887 @@
   level: 'info',
   message: 'HTTP POST /api/auth/login'
 }
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '5bd7e9c8-0d49-436e-8c1c-ce2fd280d79c',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 125
+  },
+  level: 'error',
+  message: 'HTTP POST /api/auth/register'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '2a19a844-ec1a-4dea-8c43-1dd1ded0dcef',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 401 },
+    responseTime: 55
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/register'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'cbacbb3d-6a95-492b-8382-fb9f7201cf89',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 117
+  },
+  level: 'error',
+  message: 'HTTP POST /api/auth/register'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'a6717e68-8355-48aa-9015-b2803454ae99',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 193
+  },
+  level: 'info',
+  message: 'HTTP POST /api/auth/register'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'a84d1022-94dd-4d9c-b59e-07ce6f636768',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 404 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'a937e071-1dde-4338-9562-e043ebec6336',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 404 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '8fba168a-fa32-4a38-877b-055d67024869',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 404 },
+    responseTime: 6
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '966dd498-30fe-4935-a60b-b326410952ad',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 404 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '900b3bf6-5a73-4255-9113-29c52eb05496',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 404 },
+    responseTime: 4
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verfiy-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '9d04f944-c871-4687-a7fc-0611d7a3f558',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 404 },
+    responseTime: 4
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'c204f1f3-9457-409a-be3a-20c5c4d9acd2',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 404 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'f59c6ef4-5077-400b-9ff6-2208da24c7fe',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 404 },
+    responseTime: 8
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '703fed34-c858-4411-955f-9f08231adfa9',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 7
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '72d4ccc8-15b6-44c8-b236-045a284eaa03',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 404 },
+    responseTime: 6
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '40ce7863-f64b-4a70-97eb-874e450d98f8',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 16
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '6f1b7e70-0799-474b-a14a-b8f5718bd3f0',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'e2ca1d3c-692a-42d0-8327-e8984503450c',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722',
+      query: {
+        token: 'ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 4
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=ac60d0cb657b579a49fa5416334fc5a19c3da79a760f654d89c2ac5c6df04722'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '149758fe-9619-42b4-88d1-3fe5577e54ef',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 112
+  },
+  level: 'error',
+  message: 'HTTP POST /api/auth/register'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'f2e9803c-1a39-4cdb-bced-cb2ff05453e5',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 125
+  },
+  level: 'info',
+  message: 'HTTP POST /api/auth/register'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'ed908502-16f5-4b91-a5d7-509e8cb98fca',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 6
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'f827ac31-207a-4165-85a4-7651c4af9684',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 7
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '9fb512d5-e09e-4050-a038-297e1e737476',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'cae29489-a12b-45b6-b847-163ee425ee6e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '94361da9-917d-4237-a96b-8c91c3d47712',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '1e2d115d-d34c-4871-ad55-da2d37e439ba',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 2
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '7fae008e-64d5-4f58-9256-dd263f7bac07',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 8
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '2f530282-72e3-4378-8964-26b012715d8c',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 6
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '644bafaa-884f-4816-a457-f7776378f9e1',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 8
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '7727f7da-0af1-4b82-98bf-1c88edb940d0',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 10
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '43f77c21-247e-4d8e-a9d5-d5127e56fd3f',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 401 },
+    responseTime: 33
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'f735c801-f712-448e-a18f-d31cdc6bb2b2',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 200 },
+    responseTime: 43
+  },
+  level: 'info',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/login',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '71152ed9-e23a-4201-84df-41c30d694832',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '71'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 96
+  },
+  level: 'info',
+  message: 'HTTP POST /api/auth/login'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '68d59099-625c-4d91-b797-49a5245bb176',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c',
+      query: {
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+      }
+    },
+    res: { statusCode: 200 },
+    responseTime: 42
+  },
+  level: 'info',
+  message: 'HTTP POST /api/auth/verify-account?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjhhNzFkZmU3OTk1Y2Y2YTAxMWY3YzQiLCJuYW1lIjoicnVtb3MiLCJpYXQiOjE3MjAzNDkxNTEsImV4cCI6MTcyMDM1Mjc1MX0.2wwBn0je9oLaAXl-Lm0fh4P3bkpOlhQ3DFvOUxaxY8c'
+}

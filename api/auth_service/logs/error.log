@@ -1,0 +1,78 @@
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '5bd7e9c8-0d49-436e-8c1c-ce2fd280d79c',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 125
+  },
+  level: 'error',
+  message: 'HTTP POST /api/auth/register'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'cbacbb3d-6a95-492b-8382-fb9f7201cf89',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 117
+  },
+  level: 'error',
+  message: 'HTTP POST /api/auth/register'
+}
+{
+  meta: {
+    req: {
+      url: '/api/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.39.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '149758fe-9619-42b4-88d1-3fe5577e54ef',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '199'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/auth/register',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 112
+  },
+  level: 'error',
+  message: 'HTTP POST /api/auth/register'
+}

@@ -11,7 +11,7 @@ router.get("/me", checkToken, authController.me);
 
 router.post("/forget-password", authController.forgetPassword);
 
-// router.post("/reset-password-check", authController.resetPasswordCheck);
-
 router.post("/reset-password", authController.resetPasswordCheck);
+
+router.post("/verify-account", authController.verifyAccount);
 module.exports = router;

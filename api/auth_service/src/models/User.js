@@ -17,6 +17,7 @@ const userSchema = new mongoose.Schema(
       code: { type: String, default: null },
       time: { type: String, default: null },
     },
+    isVerified: { type: Boolean, default: false },
   },
   { collection: "users", timestamps: true, versionKey: false }
 );
